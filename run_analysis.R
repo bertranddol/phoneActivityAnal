@@ -48,12 +48,7 @@ for (ii in 1:length( featuredata[[1]]  ) ) {
   }
 }
 
-#3 Uses descriptive activity names to name the activities in the data set
-
-
-
-#4 Appropriately labels the data set with descriptive variable names. 
-
+#3 Header/labels used is directly coming from the feature file
 
 #5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
@@ -76,6 +71,8 @@ tr_y = read.table(train_y_ds)
 te_y = read.table(test_y_ds)
 
 ally <- as.data.frame(matrix(0, ncol = 1 , nrow = nrow(m) ) )
-ally = merge( tr_y , te_y )
+ally = merge( tr_y[1] , te_y[1] )
 colNb=colNb+1
 m[,colNb] <- ally[,1]
+
+write.csv(m, file= "/Users/bdolimier/developer/perso/classDS/data/UCI_HAR_Dataset/result_UCI.txt", fileEncoding = "macroman")
