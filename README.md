@@ -1,17 +1,18 @@
 # phoneActivityAnal
 Human Activity as recorded by smart phone analysis
 
-# Data source is : http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
+- Data source is : http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
 
-# using R software with library data.table and plyr 
-# Load data table library to allow bindlist and other data frame/table functions
+- using R software with library data.table and plyr 
 
-# Training and test pre-processed data is merged into one dataset
+- Load data table library to allow bindlist and other data frame/table functions
 
-# Dataset is then subsetted to extract only mean and standard deviation data
+- Training and test pre-processed data is merged into one dataset
 
-# Dataset name and labels correspond to set of attributes found in features.txt from  provide source data
+- Dataset is then subsetted to extract only mean and standard deviation data
 
-# Average and mean by subject, by activity and by activity/subject were computed
+- Dataset name and labels correspond to set of attributes found in features.txt from  provide source data
 
-# Result saved in this repo under result_UCI.txt
+- Average and mean by subject, by activity and by activity/subject were computed
+
+- Result saved in this repo under result_UCI.txt
